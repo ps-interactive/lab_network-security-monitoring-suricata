@@ -16,7 +16,7 @@ mkdir -p $LOG_PATH
 rm -rf $LOG_PATH/*
 
 ## process pcap
-suricata -c /etc/suricata/suricata.yaml -k none -r $1 -l $LOG_PATH -s "/home/ubuntu/custom.rules"
+suricata -c /etc/suricata/suricata.yaml -k none -r $1 -l $LOG_PATH -s "/home/pslearner/custom.rules"
 
 #print out alerts
 echo -e "\n[*] Alerts:\n"
